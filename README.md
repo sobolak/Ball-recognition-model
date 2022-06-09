@@ -62,7 +62,7 @@ Przykłady zdjęć z przewidywaniami:
 
 
   #### Autorzy
-  Kamil 'Mustafa' Sobolak
+  Kamil 'Mufasa' Sobolak
   
   ![Screenshot](zdj/KS.jpg)
 
