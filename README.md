@@ -22,7 +22,7 @@ Z oryginalnego obrazka (FHD) powstały cztery nowe z przycięć (3/4 FHD) oraz f
 Model na wejście przyjmuje 270x480px (1/4FHD), dataset treningowy powstał z dodania do siebie:
 - oryginał + cropped + flipped + contrast + brightness
 co daje:
-- 1 + 1*4 + 4*14 = 61
+- 1 + 1*4 + 4*14 = 429
 Zebrano ~1300 zdjęć, a więc 61*1300=79300, jednak po cropie piłka nie zawsze znajdowała się na obrazku, a więc ostatecznie dataset miał w sobie 52960
 
 Problemem w tym momencie była pamięć RAM. Rozwiązaniem okazał się dataset oraz pipeline wejściowy do modelu, co pozwala na niewczytywanie wszystkiech obrazków do pamięci.
