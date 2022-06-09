@@ -62,11 +62,11 @@ Przykłady zdjęć z przewidywaniami:
 
 
   #### Autorzy
-  Kamil 'Mustafa' Sobolak
+  Kamil 'Mustafa' Sobolak\n
   ![Screenshot](zdj/KS.jpg)
 
-  Kacper 'Whitecore' Zemła
-  ![Screenshot](zdj/KZ.jpg)
+  Kacper 'Whitecore' Zemła\n
+  ![Screenshot](zdj/KZ.jpeg)
 
-  Marek 'Legio' Kwak
+  Marek 'Legio' Kwak\n
   ![Screenshot](zdj/MK.jpeg)
