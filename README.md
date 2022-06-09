@@ -9,7 +9,7 @@ Zdecydowaliśmy się na dane wysokiej jakości, aby piłka była dobrze widoczna
 #### Przygotowanie danych
 
 
-Początkowo zgromadzono ~200 zdjęć oraz oznaczono piłke na każdym z nich, przy użyciu narzędzia[labelimg](https://github.com/tzutalin/labelImg)
+Początkowo zgromadzono ~200 zdjęć oraz oznaczono piłke na każdym z nich, przy użyciu narzędzia [labelimg](https://github.com/tzutalin/labelImg).
 Utworzono także pierwszy podstawowy model, jednak przewidywał on obiekt zawsze na środku obrazka nie ważne czy była to trawa czy piłkarz. Udało nam się z tym poradzić gromadząc większą ilość danych wejściowych oraz augmentacją.
 
 - Zmniejszenie przeuczenia -> tworzenie większej ilości danych(obrazków treningowych) poprzez:
