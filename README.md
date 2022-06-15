@@ -62,28 +62,15 @@ Przykłady zdjęć z przewidywaniami:
 
 
   #### Autorzy
-  Kamil 'Mufasa' Sobolak
-  
-  ![Screenshot](zdj/KS.jpg)
-
-  Kacper 'Whitecore' Zemła
-  
-  ![Screenshot](zdj/KZ.jpeg)
-
-  Marek 'Legio' Kwak
-  
-  ![Screenshot](zdj/MK.jpeg)
-
-
   <table>
-    <tr>
+    <tr style="text-align: center; font-weight: bold;">
       <td>Kamil 'Mufasa' Sobolak</td>
       <td>Kacper 'Whitecore' Zemła</td>
       <td>Marek 'Legio' Kwak</td>
     </tr>
     <tr>
-      <td><img src="zdj/KS.jpg" width=270 height=480></td>
-      <td><img src="zdj/KZ.jpeg" width=270 height=480></td>
-      <td><img src="zdj/MK.jpeg" width=270 height=480></td>
+      <td><img src="zdj/KS.jpg" width=270 height=400></td>
+      <td><img src="zdj/KZ.jpeg" width=270 height=400></td>
+      <td><img src="zdj/MK.jpeg" width=270 height=400></td>
     </tr>
   </table>
