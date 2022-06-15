@@ -100,10 +100,10 @@ Przykłady zdjęć z przewidywaniami:
 
 #### Opiekun Merytoryczny
 <table>
-  <tr align="center"">
+  <tr align="center">
     <td>Jarosław 'Dzik Merytoryczny' Bułat</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td><img src="zdj/JB.jpeg" width=50%></td>
   </tr>
 </table>
@@ -116,9 +116,9 @@ Przykłady zdjęć z przewidywaniami:
     <td>Kacper 'Whitecore' Zemła</td>
     <td>Marek 'Legio' Kwak</td>
   </tr>
-  <tr>
-    <td><img src="zdj/KS.jpg" width=33%></td>
-    <td><img src="zdj/KZ.jpeg" width=33%></td>
-    <td><img src="zdj/MK.jpeg" width=33%></td>
+  <tr align="center">
+    <td><img src="zdj/KS.jpg" width=100%></td>
+    <td><img src="zdj/KZ.jpeg" width=100%></td>
+    <td><img src="zdj/MK.jpeg" width=100%></td>
   </tr>
 </table>
