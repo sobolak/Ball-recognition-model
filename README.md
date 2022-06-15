@@ -2,11 +2,11 @@
 
 Celem projektu jest stworzenie klasyfikatora obrazów opartego o sieć splotową. Przygotowaliśmy i wytrenowaliśmy model wykrywający piłki z meczów piłkarskich. Czy będzie to najnowszy model, czy zwykła biedronka na pewno sobie poradzimy.
 
-#### Zebranie danych
+## Zebranie danych
 
 Zdecydowaliśmy się na dane wysokiej jakości, aby piłka była dobrze widoczna. Na początku gromadziliśmy wszystkie dostępne zdjęcia, jednak potem zasadne było ograniczenie się do takich zdjęcia na których piłka jest wyraźna. Staraliśmy się tez wybierać z mała piłką jednak taka klasyfikacja nie ma sensu ze wzglądu na późniejsze przetwarzanie uniemożliwia znalezienie tylko kilku pikseli gdzie znajduje się futbolówka. Wybraliśmy piłki różnego rodzaju, z różnych rozgrywek m.in Premier League, mistrzostwa świata 2018, Liga Mistrzów. Nasz proces polegał na selekcji jakościowych momentów wycięcie ich i wycinanie odpowiednich klatek. Następnie zaznaczenie piłek tam gdzie występują.
 
-#### Przygotowanie danych
+## Przygotowanie danych
 
 
 Początkowo zgromadzono ~200 zdjęć oraz oznaczono piłke na każdym z nich, przy użyciu narzędzia [labelimg](https://github.com/tzutalin/labelImg).
@@ -77,7 +77,7 @@ Przykładowe użycie:
   - Crop2 flipped
   ![Screenshot](zdj/crop2_flipped.jpeg)
 
-#### Model
+## Model
 
 - Model jest bazowany na warstwach splotowych, a więc składa się z warstw:
   - Conv2D
@@ -89,7 +89,7 @@ Przykładowe użycie:
 - Rysowanie krzywej uczenia, (zmiany funkcji loss dla datasetu treningowego oraz walidacyjnego) pozwala to określić czy model się przeucza.
 ![Screenshot](zdj/loss_function_bad.jpeg)
 
-#### Wyniki
+## Wyniki
 
 Funkcja loss dobrego modelu:
 ![Screenshot](zdj/loss_function.jpeg)
@@ -98,7 +98,7 @@ Przykłady zdjęć z przewidywaniami:
 ![Screenshot](zdj/examples.png)
 
 
-#### Opiekun Merytoryczny
+## Opiekun Merytoryczny
 <table>
   <tr align="center">
     <td>Jarosław 'Dzik Merytoryczny' Bułat</td>
@@ -109,7 +109,7 @@ Przykłady zdjęć z przewidywaniami:
 </table>
 
 
-#### Autorzy
+## Autorzy
 <table>
   <tr align="center">
     <td>Kamil 'Mufasa' Sobolak</td>
