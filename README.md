@@ -120,7 +120,7 @@ Przykłady zdjęć z przewidywaniami:<br/>
 
 
 ## Autorzy
-<table style="margin-left:auto; margin-right:auto;">
+<table align="center">
   <tr align="center">
     <td>Kamil 'Mufasa' Sobolak</td>
     <td>Kacper 'Whitecore' Zemła</td>
