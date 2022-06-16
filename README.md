@@ -7,9 +7,10 @@ Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie,
 Przyjętym założeniem jest, że piłka znajduje się na obrazku.
 Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasyfikacyjny, a więc zwracający informację czy na danym obrazie znajduje się piłka, po czym oba te modele złączyć w jeden program.
 
-Model jest stworzony w oparciu o [keras](https://keras.io/), a więc API pozwalające na łatwe tworzenie customowych modelów.
-Użyte środowisko to [Google Colab](https://research.google.com/colaboratory/), który pozwala na wykonywanie kody na maszynach udostępnionych przez Google'a.
+Model jest stworzony w oparciu o [keras](https://keras.io/), a więc API pozwalające na łatwe tworzenie customowych modelów.<br/>
+Użyte środowisko to [Google Colab](https://research.google.com/colaboratory/), który pozwala na wykonywanie kody na maszynach udostępnionych przez Google'a.<br/>
 Ostateczny model składa się z warstw jak poniżej, przetrenowany został na datasecie złożonym z ~53000 obrazów:
+<br/>
 ![Screenshot](zdj/final_model.jpeg)
 
 Ale wszystko po kolei:
@@ -22,13 +23,15 @@ Zdecydowaliśmy się na dane wysokiej jakości, aby piłka była dobrze widoczna
 
 Początkowo zgromadzono ~200 zdjęć oraz oznaczono piłke na każdym z nich, przy użyciu narzędzia [labelimg](https://github.com/tzutalin/labelImg).
 Utworzono także pierwszy podstawowy model, jednak przewidywał on obiekt zawsze na środku obrazka nie ważne czy była to trawa czy piłkarz.
-Przykłady:
+Przykłady:<br/>
 ![Screenshot](zdj/bad_predictions.jpeg)
 
 Po wynikach loss i validation loss mozna zobaczyć, że model się przeuczał:
+<br/>
 ![Screenshot](zdj/overfitted.jpeg)
 
 Najlepiej jednak dane te przedstawić w formie wykresu:
+<br/>
 ![Screenshot](zdj/overfitted_chart.jpeg)
 
 Skąd wiadomo, że model jest przuczony?
@@ -36,7 +39,7 @@ W zasadzie wystarczy zobaczyć, że treningowy loss wciąż spada, a ten walidac
 Przykładowe wytłumaczenie na wiki:
 [overfitting_wiki](https://en.wikipedia.org/wiki/Overfitting#Machine_learning)
 
-Standardowo przy przeuczaniu trzeba zdobyc więcej danych treningowych, pomaga w tym augmentacja.
+Standardowo przy przeuczaniu trzeba zdobyc więcej danych treningowych, pomaga w tym augmentacja.<br/>
 (cyt. *Augmentacja danych polega na wprowadzeniu do materiału treningowego nieco zmodyfikowanych kopii istniejących danych, co zazwyczaj przekłada się pozytywnie na wyniki algorytmów uczenia maszynowego.*)
 
 - W naszym przypadku augmentacja polegała na:
@@ -63,29 +66,35 @@ Floatem, bo RGB przyjmuje wartości 0-255, ale potrzebna była normalizacja (o n
 Wystarczy więc pomnożyć wszystkie wymiary oraz 16 i wychodzi liczba bitów potrzebnej pamięci.
 53000*270*480*3*16 bitów, co daje ~38Gb.
 
-Trzeba więc, aby model czytał dane w locie i podawał do modelu, można to osiągnąć poprzez stworzenie dataseta oraz funkcji służącej jako wejściowy pipeline.
-[użyta biblioteka do dataseta](https://www.tensorflow.org/datasets/api_docs/python/tfds)
+Trzeba więc, aby model czytał dane w locie i podawał do modelu, można to osiągnąć poprzez stworzenie dataseta oraz funkcji służącej jako wejściowy pipeline.<br/>
+[Użyta biblioteka do dataseta](https://www.tensorflow.org/datasets/api_docs/python/tfds)<br/>
 Po zrobieniu tego wyniki były już lepsze, jednak kilka rzeczy jeszcze zostało do zrobienia:
   - Normalizacja danych
-  - Znalezienie najlepszego modelu
+  - Znalezienie najlepszego modelu<br/><br/>
 Normalizacja została wykonana w zasadzie w trakcie robienia datasetu, polegała na tym, żeby zamienić zapis zdjęć z formy klasycznego RGB, a więc (0-255) na (0-1), jest to zrobione przy wejściowym pipelinie - tablica jest dzielona przez 255, a wykorzystywany typ danych to Float16.
 Tak samo dla BBox'ów(Bouding Box - kwadraty wyznaczające położenie piłki, składające się z ((Xmin, Ymin), (Xmax, Ymax)), a więc dwóch punktów) wystarczyło przedzielic przez 480 -> najwiekszy wymiar obrazu.
 
 Do szukania modelu użyto [autotuner'a](https://www.tensorflow.org/tutorials/keras/keras_tuner), który pozwala dobrać odpowiednie wawrtości dla w zasadzie wszystkiego, a więc liczby filtrów, liczby jednostek, szybkości uczenia, liczby warstw i wiele innych.
 Przykładowe użycie:
+<br/>
 ![Screenshot](zdj/autotuner.jpeg)
 
 ### Przykłady
 
   - Obrazek oryginalny
+  <br/>
   ![Screenshot](zdj/original.jpeg)
   - Ucięty dolny prawy róg (Crop1)
+  <br/>
   ![Screenshot](zdj/crop1.jpeg)
   - Ucięty górny lewy róg (Crop2)
+  <br/>
   ![Screenshot](zdj/crop2.jpeg)
   - Crop1 flipped
+  <br/>
   ![Screenshot](zdj/crop1_flipped.jpeg)
   - Crop2 flipped
+  <br/>
   ![Screenshot](zdj/crop2_flipped.jpeg)
 
 ## Model
@@ -98,14 +107,15 @@ Przykładowe użycie:
 - ADAM optymalizator - jest on najbardziej uniwersalny
 - Autotuner -> narzędzie które pomaga ustalić odpowiednie wartości ilości filtrów w warstwach splotowych, unitów w warstwach dense oraz learning rate
 - Rysowanie krzywej uczenia, (zmiany funkcji loss dla datasetu treningowego oraz walidacyjnego) pozwala to określić czy model się przeucza.
-![Screenshot](zdj/loss_function_bad.jpeg)
 
 ## Wyniki
 
 Funkcja loss dobrego modelu:
+<br/>
 ![Screenshot](zdj/loss_function.jpeg)
 
 Przykłady zdjęć z przewidywaniami:
+<br/>
 ![Screenshot](zdj/examples.png)
 
 
@@ -121,7 +131,7 @@ Przykłady zdjęć z przewidywaniami:
 
 
 ## Autorzy
-<table>
+<table style="margin-left:auto; margin-right:auto;">
   <tr align="center">
     <td>Kamil 'Mufasa' Sobolak</td>
     <td>Kacper 'Whitecore' Zemła</td>
