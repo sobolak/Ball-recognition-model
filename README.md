@@ -109,7 +109,7 @@ Przykłady zdjęć z przewidywaniami:<br/>
 
 
 ## Opiekun Merytoryczny
-<table>
+<table align="center">
   <tr align="center">
     <td>Jarosław 'Dzik Merytoryczny' Bułat</td>
   </tr>
@@ -120,7 +120,8 @@ Przykłady zdjęć z przewidywaniami:<br/>
 
 
 ## Autorzy
-<table align="center">
+
+<table>
   <tr align="center">
     <td>Kamil 'Mufasa' Sobolak</td>
     <td>Kacper 'Whitecore' Zemła</td>
