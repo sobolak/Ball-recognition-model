@@ -1,13 +1,24 @@
 # Ball-recognition-model
 
-Celem projektu jest stworzenie klasyfikatora obrazów opartego o sieć splotową. Przygotowaliśmy i wytrenowaliśmy model wykrywający piłki z meczów piłkarskich. Czy będzie to najnowszy model, czy zwykła biedronka na pewno sobie poradzimy.
+## Cel projektu
+Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie, a więc taki który zwraca współrzędne dwóch pikseli. Pozwalało by to na określenie gdzie piłka się znajduje i jak duża jest.
+
+## Słowo wstępne
+Przyjętym założeniem jest, że piłka znajduje się na obrazku.
+Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasyfikacyjny, a więc zwracający informację czy na danym obrazie znajduje się piłka, po czym oba te modele złączyć w jeden program.
+
+Model jest stworzony w oparciu o [keras](https://keras.io/), a więc API pozwalające na łatwe tworzenie customowych modelów.
+Użyte środowisko to [Google Colab](https://research.google.com/colaboratory/), który pozwala na wykonywanie kody na maszynach udostępnionych przez Google'a.
+Ostateczny model składa się z warstw jak poniżej, przetrenowany został na datasecie złożonym z ~53000 obrazów:
+![Screenshot](zdj/final_model.jpeg)
+
+Ale wszystko po kolei:
 
 ## Zebranie danych
 
 Zdecydowaliśmy się na dane wysokiej jakości, aby piłka była dobrze widoczna. Na początku gromadziliśmy wszystkie dostępne zdjęcia, jednak potem zasadne było ograniczenie się do takich zdjęcia na których piłka jest wyraźna. Staraliśmy się tez wybierać z mała piłką jednak taka klasyfikacja nie ma sensu ze wzglądu na późniejsze przetwarzanie uniemożliwia znalezienie tylko kilku pikseli gdzie znajduje się futbolówka. Wybraliśmy piłki różnego rodzaju, z różnych rozgrywek m.in Premier League, mistrzostwa świata 2018, Liga Mistrzów. Nasz proces polegał na selekcji jakościowych momentów wycięcie ich i wycinanie odpowiednich klatek. Następnie zaznaczenie piłek tam gdzie występują.
 
 ## Przygotowanie danych
-
 
 Początkowo zgromadzono ~200 zdjęć oraz oznaczono piłke na każdym z nich, przy użyciu narzędzia [labelimg](https://github.com/tzutalin/labelImg).
 Utworzono także pierwszy podstawowy model, jednak przewidywał on obiekt zawsze na środku obrazka nie ważne czy była to trawa czy piłkarz.
@@ -17,16 +28,16 @@ Przykłady:
 Po wynikach loss i validation loss mozna zobaczyć, że model się przeuczał:
 ![Screenshot](zdj/overfitted.jpeg)
 
-Najlepiej jednak widać to na wykresie z tych danych:
+Najlepiej jednak dane te przedstawić w formie wykresu:
 ![Screenshot](zdj/overfitted_chart.jpeg)
 
 Skąd wiadomo, że model jest przuczony?
-W zasadzie wystarczy zobaczyc, że treningowy loss wciąż spada, a ten walidacyjny przestaja się już poprawiać.
+W zasadzie wystarczy zobaczyć, że treningowy loss wciąż spada, a ten walidacyjny przestaje się już poprawiać.
 Przykładowe wytłumaczenie na wiki:
 [overfitting_wiki](https://en.wikipedia.org/wiki/Overfitting#Machine_learning)
 
 Standardowo przy przeuczaniu trzeba zdobyc więcej danych treningowych, pomaga w tym augmentacja.
-(cyt. "Augmentacja danych polega na wprowadzeniu do materiału treningowego nieco zmodyfikowanych kopii istniejących danych, co zazwyczaj przekłada się pozytywnie na wyniki algorytmów uczenia maszynowego.")
+(cyt. *Augmentacja danych polega na wprowadzeniu do materiału treningowego nieco zmodyfikowanych kopii istniejących danych, co zazwyczaj przekłada się pozytywnie na wyniki algorytmów uczenia maszynowego.*)
 
 - W naszym przypadku augmentacja polegała na:
   - ucinaniu rogów obrazka -> daje to dwa nowe z jednego oraz powoduje, że piłki są bliżej krawędzi obrazków.
@@ -41,7 +52,7 @@ Dataset treningowy powstał z dodania do siebie:
 co daje:
 - 1 + 1*4 + 4*14 = 429
 Zebrano ~1300 zdjęć, a więc 61*1300=79300, jednak po cropie piłka nie zawsze znajdowała się na obrazku, więc niektóre trzeba było odrzucić.
-Ostatecznie dataset miał w sobie 52960 zdjęć.
+Ostatecznie dataset miał w sobie ~53k zdjęć.
 
 Problemem w tym momencie była pamięć RAM, bo wczytanie takiej ilości danych wymaga dużej ilości zasobów.
 Jak dużej?
