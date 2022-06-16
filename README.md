@@ -1,14 +1,15 @@
 # Ball-recognition-model
 
 ## Cel projektu
-Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie, a więc taki który zwraca współrzędne dwóch pikseli. Pozwalało by to na określenie gdzie piłka się znajduje i jak duża jest.
+Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie, a więc taki który zwraca współrzędne futbolówki. 
 
 ## Słowo wstępne
 Przyjętym założeniem jest, że piłka znajduje się na obrazku.
-Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasyfikacyjny, a więc zwracający informację czy na danym obrazie znajduje się piłka, po czym oba te modele złączyć w jeden program.
+Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasyfikacyjny, a więc zwracający informację czy na danym obrazie znajduje się piłka, po czym oba te modele złączyć w jeden program. Może być to wykorzystywane przy odpowiednim wycięciu zdjęcia np. do zweryfikowania pozycji spalonej.
 
 Model jest stworzony w oparciu o [keras](https://keras.io/), a więc API pozwalające na łatwe tworzenie customowych modelów.<br/>
 Użyte środowisko to [Google Colab](https://research.google.com/colaboratory/), który pozwala na wykonywanie kody na maszynach udostępnionych przez Google'a.<br/>
+Pod koniec wykonywania projektu zdecydowalismy się wybrać Google Colab w poszserzonej wersji, aby łatwiej było dostać pamięć RAM.<br/>
 Ostateczny model składa się z warstw jak poniżej, przetrenowany został na datasecie złożonym z ~53000 obrazów:<br/>
 ![Screenshot](zdj/final_model.jpeg)
 
@@ -16,7 +17,7 @@ Ale wszystko po kolei:
 
 ## Zebranie danych
 
-Zdecydowaliśmy się na dane wysokiej jakości, aby piłka była dobrze widoczna. Na początku gromadziliśmy wszystkie dostępne zdjęcia, jednak potem zasadne było ograniczenie się do takich zdjęcia na których piłka jest wyraźna. Staraliśmy się tez wybierać z mała piłką jednak taka klasyfikacja nie ma sensu ze wzglądu na późniejsze przetwarzanie uniemożliwia znalezienie tylko kilku pikseli gdzie znajduje się futbolówka. Wybraliśmy piłki różnego rodzaju, z różnych rozgrywek m.in Premier League, mistrzostwa świata 2018, Liga Mistrzów. Nasz proces polegał na selekcji jakościowych momentów wycięcie ich i wycinanie odpowiednich klatek. Następnie zaznaczenie piłek tam gdzie występują.
+Zdecydowaliśmy się na dane wysokiej jakości, aby piłka była dobrze widoczna. Na początku gromadziliśmy wszystkie dostępne zdjęcia, jednak potem zasadne było ograniczenie się do takich zdjęcia na których piłka jest wyraźna. Staraliśmy się tez wybierać z mała piłką jednak taka klasyfikacja nie ma sensu ze wzglądu na późniejsze przetwarzanie uniemożliwia znalezienie tylko kilku pikseli gdzie znajduje się futbolówka. Wybraliśmy piłki różnego rodzaju, z różnych rozgrywek m.in Premier League, mistrzostwa świata 2018, Liga Mistrzów. Nasz proces polegał na selekcji jakościowych momentów wycięcie ich i wycinanie odpowiednich klatek. Następnie zaznaczenie piłek tam gdzie występują. Korzystaliśmy z programu na którego wejście podawaliśmy co którą klatkę wycinamy i z których części pliku.
 
 ## Przygotowanie danych
 
@@ -91,11 +92,11 @@ Przykładowe użycie:<br/>
 ## Model
 
 - Model jest bazowany na warstwach splotowych, a więc składa się z warstw:
-  - Conv2D
-  - MaxPooling2D
-  - Dropout
-  - Dense
-- ADAM optymalizator - jest on najbardziej uniwersalny
+  - Conv2D -> wprowadzającej splot
+  - MaxPooling2D -> zmieniającej rodzielczość obrazka
+  - Dropout -> przepuszczającej tylko fragment danych (walka z przeuczeniem)
+  - Dense -> w pełni połączone neurony
+- ADAM optymalizator -> jest on najbardziej uniwersalny
 - Autotuner -> narzędzie które pomaga ustalić odpowiednie wartości ilości filtrów w warstwach splotowych, unitów w warstwach dense oraz learning rate
 - Rysowanie krzywej uczenia, (zmiany funkcji loss dla datasetu treningowego oraz walidacyjnego) pozwala to określić czy model się przeucza.
 
