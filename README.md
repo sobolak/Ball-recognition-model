@@ -9,8 +9,7 @@ Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasy
 
 Model jest stworzony w oparciu o [keras](https://keras.io/), a więc API pozwalające na łatwe tworzenie customowych modelów.<br/>
 Użyte środowisko to [Google Colab](https://research.google.com/colaboratory/), który pozwala na wykonywanie kody na maszynach udostępnionych przez Google'a.<br/>
-Ostateczny model składa się z warstw jak poniżej, przetrenowany został na datasecie złożonym z ~53000 obrazów:
-<br/>
+Ostateczny model składa się z warstw jak poniżej, przetrenowany został na datasecie złożonym z ~53000 obrazów:<br/>
 ![Screenshot](zdj/final_model.jpeg)
 
 Ale wszystko po kolei:
@@ -26,12 +25,10 @@ Utworzono także pierwszy podstawowy model, jednak przewidywał on obiekt zawsze
 Przykłady:<br/>
 ![Screenshot](zdj/bad_predictions.jpeg)
 
-Po wynikach loss i validation loss mozna zobaczyć, że model się przeuczał:
-<br/>
+Po wynikach loss i validation loss mozna zobaczyć, że model się przeuczał:<br/>
 ![Screenshot](zdj/overfitted.jpeg)
 
-Najlepiej jednak dane te przedstawić w formie wykresu:
-<br/>
+Najlepiej jednak dane te przedstawić w formie wykresu:<br/>
 ![Screenshot](zdj/overfitted_chart.jpeg)
 
 Skąd wiadomo, że model jest przuczony?
@@ -75,26 +72,20 @@ Normalizacja została wykonana w zasadzie w trakcie robienia datasetu, polegała
 Tak samo dla BBox'ów(Bouding Box - kwadraty wyznaczające położenie piłki, składające się z ((Xmin, Ymin), (Xmax, Ymax)), a więc dwóch punktów) wystarczyło przedzielic przez 480 -> najwiekszy wymiar obrazu.
 
 Do szukania modelu użyto [autotuner'a](https://www.tensorflow.org/tutorials/keras/keras_tuner), który pozwala dobrać odpowiednie wawrtości dla w zasadzie wszystkiego, a więc liczby filtrów, liczby jednostek, szybkości uczenia, liczby warstw i wiele innych.
-Przykładowe użycie:
-<br/>
+Przykładowe użycie:<br/>
 ![Screenshot](zdj/autotuner.jpeg)
 
 ### Przykłady
 
-  - Obrazek oryginalny
-  <br/>
+  - Obrazek oryginalny<br/>
   ![Screenshot](zdj/original.jpeg)
-  - Ucięty dolny prawy róg (Crop1)
-  <br/>
+  - Ucięty dolny prawy róg (Crop1)<br/>
   ![Screenshot](zdj/crop1.jpeg)
-  - Ucięty górny lewy róg (Crop2)
-  <br/>
+  - Ucięty górny lewy róg (Crop2)<br/>
   ![Screenshot](zdj/crop2.jpeg)
-  - Crop1 flipped
-  <br/>
+  - Crop1 flipped<br/>
   ![Screenshot](zdj/crop1_flipped.jpeg)
-  - Crop2 flipped
-  <br/>
+  - Crop2 flipped<br/>
   ![Screenshot](zdj/crop2_flipped.jpeg)
 
 ## Model
@@ -110,12 +101,10 @@ Przykładowe użycie:
 
 ## Wyniki
 
-Funkcja loss dobrego modelu:
-<br/>
+Funkcja loss dobrego modelu:<br/>
 ![Screenshot](zdj/loss_function.jpeg)
 
-Przykłady zdjęć z przewidywaniami:
-<br/>
+Przykłady zdjęć z przewidywaniami:<br/>
 ![Screenshot](zdj/examples.png)
 
 
