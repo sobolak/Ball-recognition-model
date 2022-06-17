@@ -79,7 +79,7 @@ Do szukania modelu użyto [autotuner'a](https://www.tensorflow.org/tutorials/ker
 Przykładowe użycie:<br/>
 ![Screenshot](zdj/autotuner.jpeg)
 
-### Przykłady
+### Przykłady augmentacji
 
   - Obrazek oryginalny<br/>
   ![Screenshot](zdj/original.jpeg)
