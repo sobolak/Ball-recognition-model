@@ -112,113 +112,113 @@ Przykłady zdjęć z przewidywaniami:<br/>
 ![Screenshot](zdj/examples.png)
 
 ## Przykłady działania, na 100 zdjęciach ze zbioru walidacyjnego
-<img src="zdj/examples/ex_1.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_2.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_3.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_4.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_5.jpeg" width="18%"></img> 
+<img src="zdj/examples/1.jpeg" width="18%"></img> 
+<img src="zdj/examples/2.jpeg" width="18%"></img> 
+<img src="zdj/examples/3.jpeg" width="18%"></img> 
+<img src="zdj/examples/4.jpeg" width="18%"></img> 
+<img src="zdj/examples/5.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_6.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_7.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_8.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_9.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_10.jpeg" width="18%"></img> 
+<img src="zdj/examples/6.jpeg" width="18%"></img> 
+<img src="zdj/examples/7.jpeg" width="18%"></img> 
+<img src="zdj/examples/8.jpeg" width="18%"></img> 
+<img src="zdj/examples/9.jpeg" width="18%"></img> 
+<img src="zdj/examples/10.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_11.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_12.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_13.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_14.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_15.jpeg" width="18%"></img> 
+<img src="zdj/examples/11.jpeg" width="18%"></img> 
+<img src="zdj/examples/12.jpeg" width="18%"></img> 
+<img src="zdj/examples/13.jpeg" width="18%"></img> 
+<img src="zdj/examples/14.jpeg" width="18%"></img> 
+<img src="zdj/examples/15.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_16.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_17.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_18.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_19.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_20.jpeg" width="18%"></img> 
+<img src="zdj/examples/16.jpeg" width="18%"></img> 
+<img src="zdj/examples/17.jpeg" width="18%"></img> 
+<img src="zdj/examples/18.jpeg" width="18%"></img> 
+<img src="zdj/examples/19.jpeg" width="18%"></img> 
+<img src="zdj/examples/20.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_21.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_22.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_23.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_24.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_25.jpeg" width="18%"></img> 
+<img src="zdj/examples/21.jpeg" width="18%"></img> 
+<img src="zdj/examples/22.jpeg" width="18%"></img> 
+<img src="zdj/examples/23.jpeg" width="18%"></img> 
+<img src="zdj/examples/24.jpeg" width="18%"></img> 
+<img src="zdj/examples/25.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_26.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_27.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_28.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_29.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_30.jpeg" width="18%"></img> 
+<img src="zdj/examples/26.jpeg" width="18%"></img> 
+<img src="zdj/examples/27.jpeg" width="18%"></img> 
+<img src="zdj/examples/28.jpeg" width="18%"></img> 
+<img src="zdj/examples/29.jpeg" width="18%"></img> 
+<img src="zdj/examples/30.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_41.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_42.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_43.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_44.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_45.jpeg" width="18%"></img> 
+<img src="zdj/examples/41.jpeg" width="18%"></img> 
+<img src="zdj/examples/42.jpeg" width="18%"></img> 
+<img src="zdj/examples/43.jpeg" width="18%"></img> 
+<img src="zdj/examples/44.jpeg" width="18%"></img> 
+<img src="zdj/examples/45.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_46.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_47.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_48.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_49.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_50.jpeg" width="18%"></img> 
+<img src="zdj/examples/46.jpeg" width="18%"></img> 
+<img src="zdj/examples/47.jpeg" width="18%"></img> 
+<img src="zdj/examples/48.jpeg" width="18%"></img> 
+<img src="zdj/examples/49.jpeg" width="18%"></img> 
+<img src="zdj/examples/50.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_51.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_52.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_53.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_54.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_55.jpeg" width="18%"></img> 
+<img src="zdj/examples/51.jpeg" width="18%"></img> 
+<img src="zdj/examples/52.jpeg" width="18%"></img> 
+<img src="zdj/examples/53.jpeg" width="18%"></img> 
+<img src="zdj/examples/54.jpeg" width="18%"></img> 
+<img src="zdj/examples/55.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_56.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_57.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_58.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_59.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_60.jpeg" width="18%"></img> 
+<img src="zdj/examples/56.jpeg" width="18%"></img> 
+<img src="zdj/examples/57.jpeg" width="18%"></img> 
+<img src="zdj/examples/58.jpeg" width="18%"></img> 
+<img src="zdj/examples/59.jpeg" width="18%"></img> 
+<img src="zdj/examples/60.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_61.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_62.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_63.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_64.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_65.jpeg" width="18%"></img> 
+<img src="zdj/examples/61.jpeg" width="18%"></img> 
+<img src="zdj/examples/62.jpeg" width="18%"></img> 
+<img src="zdj/examples/63.jpeg" width="18%"></img> 
+<img src="zdj/examples/64.jpeg" width="18%"></img> 
+<img src="zdj/examples/65.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_66.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_67.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_68.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_69.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_70.jpeg" width="18%"></img> 
+<img src="zdj/examples/66.jpeg" width="18%"></img> 
+<img src="zdj/examples/67.jpeg" width="18%"></img> 
+<img src="zdj/examples/68.jpeg" width="18%"></img> 
+<img src="zdj/examples/69.jpeg" width="18%"></img> 
+<img src="zdj/examples/70.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_71.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_72.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_73.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_74.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_75.jpeg" width="18%"></img> 
+<img src="zdj/examples/71.jpeg" width="18%"></img> 
+<img src="zdj/examples/72.jpeg" width="18%"></img> 
+<img src="zdj/examples/73.jpeg" width="18%"></img> 
+<img src="zdj/examples/74.jpeg" width="18%"></img> 
+<img src="zdj/examples/75.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_76.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_77.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_78.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_79.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_80.jpeg" width="18%"></img> 
+<img src="zdj/examples/76.jpeg" width="18%"></img> 
+<img src="zdj/examples/77.jpeg" width="18%"></img> 
+<img src="zdj/examples/78.jpeg" width="18%"></img> 
+<img src="zdj/examples/79.jpeg" width="18%"></img> 
+<img src="zdj/examples/80.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_81.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_82.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_83.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_84.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_85.jpeg" width="18%"></img> 
+<img src="zdj/examples/81.jpeg" width="18%"></img> 
+<img src="zdj/examples/82.jpeg" width="18%"></img> 
+<img src="zdj/examples/83.jpeg" width="18%"></img> 
+<img src="zdj/examples/84.jpeg" width="18%"></img> 
+<img src="zdj/examples/85.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_86.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_87.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_88.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_89.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_90.jpeg" width="18%"></img> 
+<img src="zdj/examples/86.jpeg" width="18%"></img> 
+<img src="zdj/examples/87.jpeg" width="18%"></img> 
+<img src="zdj/examples/88.jpeg" width="18%"></img> 
+<img src="zdj/examples/89.jpeg" width="18%"></img> 
+<img src="zdj/examples/90.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_91.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_92.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_93.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_94.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_95.jpeg" width="18%"></img> 
+<img src="zdj/examples/91.jpeg" width="18%"></img> 
+<img src="zdj/examples/92.jpeg" width="18%"></img> 
+<img src="zdj/examples/93.jpeg" width="18%"></img> 
+<img src="zdj/examples/94.jpeg" width="18%"></img> 
+<img src="zdj/examples/95.jpeg" width="18%"></img> 
 <br/> 
-<img src="zdj/examples/ex_96.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_97.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_98.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_99.jpeg" width="18%"></img> 
-<img src="zdj/examples/ex_100.jpeg" width="18%"></img> 
+<img src="zdj/examples/96.jpeg" width="18%"></img> 
+<img src="zdj/examples/97.jpeg" width="18%"></img> 
+<img src="zdj/examples/98.jpeg" width="18%"></img> 
+<img src="zdj/examples/99.jpeg" width="18%"></img> 
+<img src="zdj/examples/100.jpeg" width="18%"></img> 
 <br/> 
 
 
