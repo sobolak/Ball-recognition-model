@@ -10,6 +10,9 @@ Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasy
 Model jest stworzony w oparciu o [keras](https://keras.io/), a więc API pozwalające na łatwe tworzenie customowych modelów.<br/>
 Użyte środowisko to [Google Colab](https://research.google.com/colaboratory/), który pozwala na wykonywanie kody na maszynach udostępnionych przez Google'a.<br/>
 Pod koniec wykonywania projektu zdecydowalismy się wybrać Google Colab w poszserzonej wersji, aby łatwiej było dostać pamięć RAM.<br/>
+Do repo dodane są też skrypty, które napisaliśmy, a bardzo ułatwiały pracę:<br/>
+  - png_to_jpg.py - prosty skrypt konwertujący wszyskie obrazy w wybranym folderze.
+  - yt_cut.py - skrypt, który z filmiku na wejściu wycina co N-tą klatkę, dając dużą ilość zdjęć.</br>
 Ostateczny model składa się z warstw jak poniżej, przetrenowany został na datasecie złożonym z ~53000 obrazów:<br/>
 ![Screenshot](zdj/final_model.jpeg)
 
@@ -107,6 +110,116 @@ Funkcja loss dobrego modelu:<br/>
 
 Przykłady zdjęć z przewidywaniami:<br/>
 ![Screenshot](zdj/examples.png)
+
+## Przykłady działania, na 100 zdjęciach ze zbioru walidacyjnego
+<img src="zdj/examples/ex_1.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_2.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_3.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_4.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_5.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_6.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_7.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_8.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_9.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_10.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_11.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_12.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_13.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_14.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_15.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_16.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_17.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_18.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_19.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_20.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_21.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_22.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_23.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_24.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_25.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_26.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_27.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_28.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_29.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_30.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_41.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_42.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_43.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_44.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_45.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_46.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_47.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_48.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_49.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_50.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_51.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_52.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_53.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_54.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_55.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_56.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_57.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_58.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_59.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_60.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_61.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_62.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_63.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_64.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_65.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_66.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_67.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_68.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_69.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_70.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_71.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_72.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_73.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_74.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_75.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_76.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_77.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_78.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_79.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_80.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_81.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_82.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_83.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_84.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_85.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_86.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_87.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_88.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_89.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_90.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_91.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_92.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_93.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_94.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_95.jpeg" width="18%"></img> 
+<br/> 
+<img src="zdj/examples/ex_96.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_97.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_98.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_99.jpeg" width="18%"></img> 
+<img src="zdj/examples/ex_100.jpeg" width="18%"></img> 
+<br/> 
 
 
 ## Opiekun Merytoryczny
