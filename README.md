@@ -1,5 +1,5 @@
 # Ball-recognition-model
-
+  
 ## Cel projektu
 Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie, a więc taki który zwraca współrzędne futbolówki. 
 
