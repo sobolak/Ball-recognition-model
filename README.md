@@ -1,9 +1,9 @@
 # Ball-recognition-model
-
+  
 ## Cel projektu
-Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie, a więc taki który zwraca współrzędne futbolówki. 
+Celem projektu jest stworzenie modelu do detekcji położenia piłki na obrazie, a więc taki który zwraca współrzędne futbolówki.
 
-## Słowo wstępne
+## Słowo wstępne  
 Przyjętym założeniem jest, że piłka znajduje się na obrazku.
 Projekt jest więc łatwo rozszerzalny -> można np. utworzyć drugi model klasyfikacyjny, a więc zwracający informację czy na danym obrazie znajduje się piłka, po czym oba te modele złączyć w jeden program. Może być to wykorzystywane przy odpowiednim wycięciu zdjęcia np. do zweryfikowania pozycji spalonej.
 
