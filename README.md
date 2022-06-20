@@ -54,7 +54,7 @@ Model na wejście przyjmuje 270x480px (1/4FHD), do tych wymiarów orazki musiał
 Dataset treningowy powstał z dodania do siebie:
 - oryginał + cropped + flipped + contrast + brightness
 co daje:
-- 1 + 1*4 + 4*14 = 61
+- 1 + (1*4) + (4*14) = 61
 Zebrano ~1300 zdjęć, a więc 61*1300=79300, jednak po cropie piłka nie zawsze znajdowała się na obrazku, więc niektóre trzeba było odrzucić.
 Ostatecznie dataset miał w sobie ~53k zdjęć.
 
